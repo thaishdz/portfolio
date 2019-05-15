@@ -9,11 +9,17 @@ body {
     background: var(--container-bg-color);
 }
 :root {
-    --container-bg-color :#492d2d;
-    --text : #b4b4c3;
+    --container-bg-color : #ececec;
+    /* bg */
     /* b4b4c3 */
     /* 5a4f4f */
-    --rojito : #A87B7B;
+    /* #492d2d */
+    --text : #33313b;
+    /* text */
+    /* b4b4c3 */
+    --quote : #A87B7B;
+    --icons : #A87B7B;
+    
 }
 .container {
     width: 100%;
@@ -67,12 +73,59 @@ body {
     width: 40%;
     height: 100px;
     font-size: 1em;
-    color : var(--text);
+    color : var(--quote);
     text-align: center;
     line-height: 1.5em; /* Espacio entre lineas*/
     font-family: 'Raleway', sans-serif;
 
 }
+
+/* Seccion Proyectos */
+
+.containerProjects {
+    width: auto;
+    /* border: 2px solid rgb(153, 134, 134); */
+    border-radius: 10px;
+    margin: 50px 0;
+	display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items:  center;
+    flex-wrap: wrap;
+}
+
+.box{
+    
+	width: 100%;
+	/* background: #F4FF81; */
+    margin: 15px 5px;
+    
+    
+}
+
+.box img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+.legend {
+    
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Nunito', serif;
+    font-size: 1.1em;
+    color : var(--text);
+}
+
+mark {
+    background: none; 
+    font-weight: bold;
+    color: #9c2c2c;
+}
+
+
+/* MEDIA QUERIES - Desktop First*/
 
 @media screen and (max-width: 1024px) {
     .box-1 {
@@ -97,7 +150,6 @@ body {
     }
 
 }
-
 
 @media screen and (max-width: 768px) {
 
@@ -145,69 +197,16 @@ body {
     .box-4 {
         width: 90%;
     }
-    
-}
-
-
-/* Seccion Proyectos */
-
- .containerProjects {
-    width: auto;
-    /* border: 2px solid rgb(153, 134, 134); */
-    border-radius: 10px;
-    margin: 50px 0;
-	display: flex;
-    justify-content: space-around;
-    align-content: center;
-    align-items:  center;
-    flex-wrap: wrap;
-}
-
-.box{
-    
-	width: 100%;
-	/* background: #F4FF81; */
-    margin: 15px 5px;
-    
-    
-}
-
-.box img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-
-
-.legend {
-    
-    text-align: center;
-    margin-top: 20px;
-    font-family: 'Nunito', serif;
-    font-size: 1.1em;
-    color : var(--text);
-}
-
-
-
-@media screen and (max-width: 320px) {
 
     .containerProjects {
         margin: 50px 10px;
     }
 
-    .box {
-        width: auto;
-        margin: 0;
-        
-    }
-
     .box img {
         max-width: 100%;
     }
-
+    
     .legend {
-        font-size: .8em;
+        line-height : 2em;
     }
 }
-
