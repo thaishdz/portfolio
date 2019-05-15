@@ -118,12 +118,14 @@ body {
     color : var(--text);
 }
 
-mark {
-    background: none; 
+span {
     font-weight: bold;
     color: #9c2c2c;
 }
 
+#name-project {
+    font-size: 1.5em;
+}
 
 /* MEDIA QUERIES - Desktop First*/
 
