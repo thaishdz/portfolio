@@ -51,19 +51,26 @@ body {
     border: 4px solid var(--icons);
 }
 
-.box-2 {
-    text-align: center;
+.box-2  {
     width: 50%;
+    
+    text-align: center;
     font-family: 'Nunito', serif;
+    display: block;
+}
+
+.about-text {
+    margin-top: 100px;
     font-size: 1.5em;
     line-height: 1.5em;
     color : var(--text);
 }
 
 .box-3 {
-    margin-top :2%;
-    justify-content: space-around;
-    width: 30%;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+    justify-content: space-between;
 }
 
 /* icons social media */
@@ -146,7 +153,6 @@ span {
     margin-top: 1em;
     text-align: center;
     font-size: 1.2em;
-    /* border: 5px solid darkred; */
 }
 
 .codemo button {
@@ -211,79 +217,55 @@ span {
 
 /* MEDIA QUERIES - Desktop First*/
 
-@media screen and (max-width: 1024px) {
-    .box-1 {
-        width: 40%;
-    }
-
-    .box-2 {
-        width: 40%;
-    }
-
-    .box-3 {
-        margin:0;
-        padding: 0;
-    }
-
-    .box-3 a {
-        margin: 50px;
-    }
-
-    .box-4 {
-        height: 20px;
-    }
-
-
-}
-
 @media screen and (max-width: 768px) {
 
     .box-2{
-        width: 300px;
+        width: 50%;
     }
-
-    .box-2 p {
-        font-size: 1em;
+    .about-text {
+        font-size: 1.2em;
+        line-height : 1.5em;
     }
 
     .box-4 {
         width: 50%;
+        margin-top: 60px;
     }
 }
 
-@media screen and (max-width: 480px) {
+/* Todas las pantallas con un ancho de 320px hasta 480px cumplen esta condición */
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+
+    .about {
+        flex-wrap: wrap;
+    }
+
     .box-1 {
         width: 100%;
-        height: 200px;
-    }
-    .box-2{
-        margin-top: 50px;
-        width: 400px;
-    }
-
-    .box-4 {
-        width: 80%;
-    }
-}
-@media screen and (max-width: 320px) {
-    .box-1 {
-        width: 45%;
-        height: 150px;
+        height: 290px;
     }
 
     .box-2 {
-        width: 50%;
-        margin-top: 50px;
-        font-size: 1.3em;
-        line-height: 1.5em;
+        width: 300px;
+        margin-top: 20px;
     }
 
-    .box-3 a {
-        margin: 1.8em 2em;
+    .about-text {
+        font-size: 1.2em;
+        line-height : 1.5em;
+        margin-top: 0;
+    }
+
+    .box-3{
+        width: 100%;
+        margin-top: 20px;
+        align-items: center;
     }
 
     .box-4 {
         width: 90%;
+        margin-top: 40px;
     }
 
     .containerProjects {
@@ -295,12 +277,8 @@ span {
     }
     
     .legend {
-        font-size: .8em;;
+        font-size: .8em;
         line-height : 1.5em;
-    }
-
-    .codemo button {
-        padding: .3em;
     }
 
     .codemo button a {
