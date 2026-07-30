@@ -1,5 +1,6 @@
 ---
 title: "Astro Narrow Practical Guide"
+draft: true
 description: "A focused path from content authoring and series organization to customization, localization, and deployment."
 chapters:
   - en/authoring-content-collections
