@@ -19,18 +19,18 @@ const { Content } = await render(item.entry);
 const t = useTranslations('es');
 ---
 
-<BaseLayout title={item.entry.data.title} description={item.entry.data.description} locale="en">
+<BaseLayout title={item.entry.data.title} description={item.entry.data.description} locale="es">
   <Breadcrumbs
-    locale="en"
+    locale="es"
     items={[
       { label: siteConfig.shortName, href: getLocalePath('es', '/'), icon: 'lucide:home' },
       { label: t('series.title'), href: getLocalePath('es', '/series/'), icon: 'lucide:list-ordered' },
       { label: item.entry.data.title, icon: 'lucide:book-open' }
     ]}
   />
-  <PageHeader title={item.entry.data.title} description={item.entry.data.description} locale="en" />
+  <PageHeader title={item.entry.data.title} description={item.entry.data.description} locale="es" />
   <article class="prose max-w-none">
     <Content />
   </article>
-  <SeriesChapterList chapters={item.chapters} locale="en" />
+  <SeriesChapterList chapters={item.chapters} locale="es" />
 </BaseLayout>

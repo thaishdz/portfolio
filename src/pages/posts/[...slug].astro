@@ -25,9 +25,9 @@ const adjacent = seriesContext || adjacentEntries(posts, entry);
 const related = relatedPosts(posts, entry, siteConfig.post.relatedCount);
 ---
 
-<BaseLayout title={entry.data.title} description={entry.data.description} locale="en" headings={headings} toc={entry.data.toc ?? 'center'} comments={entry.data.comments}>
+<BaseLayout title={entry.data.title} description={entry.data.description} locale="es" headings={headings} toc={entry.data.toc ?? 'center'} comments={entry.data.comments}>
   <Breadcrumbs
-    locale="en"
+    locale="es"
     items={[
       { label: siteConfig.shortName, href: getLocalePath('es', '/'), icon: 'lucide:home' },
       { label: contentTypes.posts.label.en, href: getLocalePath('es', contentTypes.posts.path), icon: contentTypes.posts.icon },
@@ -43,7 +43,7 @@ const related = relatedPosts(posts, entry, siteConfig.post.relatedCount);
     title={entry.data.title}
     description={entry.data.description}
     date={entry.data.pubDate}
-    locale="en"
+    locale="es"
     categories={entry.data.categories}
     tags={entry.data.tags}
     series={seriesContext ? {
@@ -56,7 +56,7 @@ const related = relatedPosts(posts, entry, siteConfig.post.relatedCount);
   <article class="prose mb-12 max-w-none">
     <Content />
   </article>
-  <PostLicense locale="en" />
-  <PostNavigation previous={adjacent.previous} next={adjacent.next} locale="en" kind={seriesContext ? 'series' : 'post'} />
-  <RelatedPosts posts={related} locale="en" />
+  <PostLicense locale="es" />
+  <PostNavigation previous={adjacent.previous} next={adjacent.next} locale="es" kind={seriesContext ? 'series' : 'post'} />
+  <RelatedPosts posts={related} locale="es" />
 </BaseLayout>
