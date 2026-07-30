@@ -1,5 +1,6 @@
 ---
 title: "Writing Posts with Astro Content Collections"
+draft: true
 description: "A practical workflow for creating typed posts, drafts, categories, and tags in Astro Narrow."
 pubDate: 2026-06-26
 categories: ["Guides"]

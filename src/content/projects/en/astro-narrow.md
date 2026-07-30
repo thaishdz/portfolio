@@ -1,5 +1,6 @@
 ---
 title: "Astro Narrow"
+draft: true
 description: "An Astro-native content theme inspired by Hugo Narrow."
 pubDate: 2026-06-27
 cover: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1600&q=80"

@@ -1,5 +1,6 @@
 ---
 title: "Deploying Astro Narrow to GitHub Pages"
+draft: true
 description: "Configure GitHub Pages, project base paths, and local production builds without broken links."
 pubDate: 2026-06-25
 categories: ["Deployment"]
