@@ -8,11 +8,11 @@ export const siteConfig = {
     name: 'Thais Hernández',
     title: {
       en: 'DevOps & Cloud Engineering',
-      'es-es': 'DevOps & Cloud Engineering'
+      'es': 'DevOps & Cloud Engineering'
     },
     description: {
       en: 'Welcome to my side projects',
-      'es-es': 'Te doy la bienvenida a mis proyectos'
+      'es': 'Te doy la bienvenida a mis proyectos'
     },
     avatar: '/avatar.jpg',
     social: [

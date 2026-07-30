@@ -7,7 +7,7 @@ interface Props {
 }
 
 const { locale } = Astro.props;
-const labels = locale === 'es-es'
+const labels = locale === 'es'
   ? { dialog: 'Visor de imágenes', close: 'Cerrar', previous: 'Anterior', next: 'Siguiente' }
   : { dialog: 'Image viewer', close: 'Close', previous: 'Previous', next: 'Next' };
 ---

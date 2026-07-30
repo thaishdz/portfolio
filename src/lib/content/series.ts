@@ -85,7 +85,7 @@ export function getPublishedSeries() {
 
 export async function getLocalizedSeries(locale: Locale) {
   const series = await getPublishedSeries();
-  const collator = new Intl.Collator(locale === 'es-es' ? 'es-ES' : locale);
+  const collator = new Intl.Collator(locale === 'es' ? 'es-ES' : locale);
 
   return series
     .filter((item) => item.locale === locale)

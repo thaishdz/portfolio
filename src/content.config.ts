@@ -10,7 +10,7 @@ const baseSchema = z.object({
   updatedDate: z.coerce.date().optional(),
   draft: z.boolean().default(false),
   cover: z.string().optional(),
-  lang: z.enum(['en', 'es-es']).optional(),
+  lang: z.enum(['en', 'es']).optional(),
   toc: z.union([z.boolean(), z.enum(['center', 'side'])]).optional(),
   comments: z.boolean().optional(),
   math: z.boolean().optional(),
@@ -55,7 +55,7 @@ const series = defineCollection({
     title: z.string(),
     description: z.string().optional(),
     draft: z.boolean().default(false),
-    lang: z.enum(['en', 'es-es']).optional(),
+    lang: z.enum(['en', 'es']).optional(),
     chapters: z.array(reference('posts')).min(2)
   })
 });

@@ -14,7 +14,7 @@ interface Props {
 }
 
 const { items, locale } = Astro.props;
-const ariaLabel = locale === 'es-es' ? 'Ruta de navegación' : 'Breadcrumb';
+const ariaLabel = locale === 'es' ? 'Ruta de navegación' : 'Breadcrumb';
 ---
 
 {items.length > 0 && (

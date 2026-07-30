@@ -2,7 +2,7 @@ import type { Locale } from '../config/i18n';
 
 export const languages: Record<Locale, string> = {
   en: 'English',
-  'es-es': 'Español'
+  'es': 'Español'
 };
 
 export const defaultLang: Locale = 'en';
@@ -62,7 +62,7 @@ export const ui = {
     'search.noResults': 'No results found',
     'search.placeholder': 'Search content'
   },
-  'es-es': {
+  'es': {
     'archive.description': 'Todas las publicaciones ordenadas por fecha.',
     'archive.filter.all': 'Todas',
     'archive.filter.categories': 'Categorías',

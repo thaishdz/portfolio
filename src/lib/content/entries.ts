@@ -36,7 +36,7 @@ export function localizedEntryPath(collection: ContentType, entry: CollectionEnt
 
 export function formatDate(date: Date | undefined, locale: Locale) {
   if (!date) return '';
-  return new Intl.DateTimeFormat(locale === 'es-es' ? 'es-ES' : 'en', {
+  return new Intl.DateTimeFormat(locale === 'es' ? 'es-ES' : 'en', {
     year: 'numeric',
     month: 'long',
     day: 'numeric'
@@ -65,7 +65,7 @@ export function collectArchiveTerms(
     for (const term of terms) counts.set(term, (counts.get(term) || 0) + 1);
   }
 
-  const collator = new Intl.Collator(locale === 'es-es' ? 'es-ES' : locale);
+  const collator = new Intl.Collator(locale === 'es' ? 'es-ES' : locale);
   return [...counts.entries()]
     .map(([value, count]) => ({ value, count }))
     .sort((a, b) => field === 'tags'
