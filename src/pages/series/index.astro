@@ -5,7 +5,7 @@ import SeriesList from '../../components/content/SeriesList.astro';
 import { getLocalizedSeries } from '../../lib/content/series';
 import { useTranslations } from '../../i18n/utils';
 
-const locale = 'en';
+const locale = 'es';
 const series = await getLocalizedSeries(locale);
 const t = useTranslations(locale);
 ---

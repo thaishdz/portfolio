@@ -13,13 +13,13 @@ import { adjacentEntries, getLocalizedEntries, entrySlug, relatedPosts } from '.
 import { getSeriesContext, localizedSeriesPath } from '../../lib/content/series';
 
 export async function getStaticPaths() {
-  const posts = await getLocalizedEntries('posts', 'en');
+  const posts = await getLocalizedEntries('posts', 'es');
   return posts.map((entry) => ({ params: { slug: entrySlug(entry as any) }, props: { entry } }));
 }
 
 const { entry } = Astro.props;
 const { Content, headings } = await render(entry);
-const posts = await getLocalizedEntries('posts', 'en');
+const posts = await getLocalizedEntries('posts', 'es');
 const seriesContext = await getSeriesContext(entry);
 const adjacent = seriesContext || adjacentEntries(posts, entry);
 const related = relatedPosts(posts, entry, siteConfig.post.relatedCount);
@@ -29,8 +29,8 @@ const related = relatedPosts(posts, entry, siteConfig.post.relatedCount);
   <Breadcrumbs
     locale="en"
     items={[
-      { label: siteConfig.shortName, href: getLocalePath('en', '/'), icon: 'lucide:home' },
-      { label: contentTypes.posts.label.en, href: getLocalePath('en', contentTypes.posts.path), icon: contentTypes.posts.icon },
+      { label: siteConfig.shortName, href: getLocalePath('es', '/'), icon: 'lucide:home' },
+      { label: contentTypes.posts.label.en, href: getLocalePath('es', contentTypes.posts.path), icon: contentTypes.posts.icon },
       { label: entry.data.title, icon: 'lucide:file-text' }
     ]}
   />

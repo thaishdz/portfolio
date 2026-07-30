@@ -14,7 +14,7 @@ import { getSeriesContext, localizedSeriesPath } from '../../../lib/content/seri
 
 export async function getStaticPaths() {
   const paths = [];
-  for (const locale of locales.filter((item) => item !== 'en')) {
+  for (const locale of locales.filter((item) => item !== 'es')) {
     const posts = await getLocalizedEntries('posts', locale);
     paths.push(...posts.map((entry) => ({ params: { locale, slug: entrySlug(entry as any) }, props: { entry, locale } })));
   }

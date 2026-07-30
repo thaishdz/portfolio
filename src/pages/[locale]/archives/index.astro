@@ -8,7 +8,7 @@ import { collectArchiveTerms, getLocalizedEntries } from '../../../lib/content/e
 import { useTranslations } from '../../../i18n/utils';
 
 export function getStaticPaths() {
-  return locales.filter((locale) => locale !== 'en').map((locale) => ({ params: { locale } }));
+  return locales.filter((locale) => locale !== 'es').map((locale) => ({ params: { locale } }));
 }
 
 const locale = Astro.params.locale as Locale;

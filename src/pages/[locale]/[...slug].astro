@@ -7,7 +7,7 @@ import { getLocalizedEntries, entrySlug } from '../../lib/content/entries';
 
 export async function getStaticPaths() {
   const paths = [];
-  for (const locale of locales.filter((item) => item !== 'en')) {
+  for (const locale of locales.filter((item) => item !== 'es')) {
     const pages = await getLocalizedEntries('pages', locale);
     paths.push(...pages.map((entry) => ({ params: { locale, slug: entrySlug(entry as any) }, props: { entry, locale } })));
   }

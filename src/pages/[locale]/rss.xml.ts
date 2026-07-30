@@ -3,7 +3,7 @@ import { getLocalizedEntries } from '../../lib/content/entries';
 import { renderRss } from '../../lib/content/rss';
 
 export function getStaticPaths() {
-  return locales.filter((locale) => locale !== 'en').map((locale) => ({ params: { locale } }));
+  return locales.filter((locale) => locale !== 'es').map((locale) => ({ params: { locale } }));
 }
 
 export async function GET({ params, site, url }: { params: { locale: Locale }; site?: URL; url: URL }) {

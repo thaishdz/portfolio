@@ -5,7 +5,7 @@ export const languages: Record<Locale, string> = {
   'es': 'Español'
 };
 
-export const defaultLang: Locale = 'en';
+export const defaultLang: Locale = 'es';
 
 export const ui = {
   en: {

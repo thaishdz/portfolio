@@ -6,7 +6,7 @@ import ArchiveFilters from '../../components/content/ArchiveFilters.astro';
 import { collectArchiveTerms, getLocalizedEntries } from '../../lib/content/entries';
 import { useTranslations } from '../../i18n/utils';
 
-const locale = 'en';
+const locale = 'es';
 const posts = await getLocalizedEntries('posts', locale);
 const categories = collectArchiveTerms(posts, 'categories', locale);
 const tags = collectArchiveTerms(posts, 'tags', locale);
