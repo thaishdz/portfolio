@@ -38,12 +38,6 @@ const links = 'links' in entry.data ? entry.data.links?.slice(0, 2) ?? [] : [];
 
         <div class="relative z-10 flex min-h-52 flex-1 flex-col">
           <div class="flex items-start justify-between gap-3">
-            <span class:list={[
-              'grid h-8 w-8 place-items-center rounded-full border text-sm',
-              entry.data.cover ? 'border-white/15 bg-white/15 text-white backdrop-blur-sm' : 'border-border bg-muted text-primary'
-            ]}>
-              <Icon name={config.icon} class="h-4 w-4" />
-            </span>
             {isFeatured && (
               <span class:list={[
                 'grid h-8 w-8 place-items-center rounded-full',

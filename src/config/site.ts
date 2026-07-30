@@ -1,7 +1,7 @@
 import type { Locale } from './i18n';
 
 export const siteConfig = {
-  name: 'Thais Blog',
+  name: 'Thais Portfolio',
   shortName: 'Thais',
   description: 'My professional blog',
   author: {
@@ -11,10 +11,10 @@ export const siteConfig = {
       'es-es': 'DevOps & Cloud Engineering'
     },
     description: {
-      en: 'A record of side projects',
-      'es-es': 'Registro de side projects'
+      en: 'My side projects',
+      'es-es': 'Mis side projects'
     },
-    avatar: '/favicon.svg',
+    avatar: '/avatar.jpg',
     social: [
       { name: 'GitHub', url: 'https://github.com/thaishdz', icon: 'simple-icons:github' },
       { name: 'Email', url: 'mailto:thaishdzlpz@gmail.com', icon: 'lucide:mail' }
