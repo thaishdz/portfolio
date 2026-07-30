@@ -18,6 +18,11 @@ const systemRoutes = {
     label: { en: 'Series', 'es': 'Series' },
     href: '/series/',
     icon: 'lucide:list-ordered'
+  },
+  about: {
+    label: { en: 'About', es: 'Sobre mí' },
+    href: '/about/',
+    icon: 'lucide:user'
   }
 } satisfies Record<string, {
   label: Record<Locale, string>;

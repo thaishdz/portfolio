@@ -19,8 +19,8 @@ export async function GET({ site, url }: { site?: URL; url: URL }) {
     getLocalePath(locale, '/'),
     getLocalePath(locale, '/posts/'),
     getLocalePath(locale, '/projects/'),
-    getLocalePath(locale, '/series/'),
-    getLocalePath(locale, '/archives/'),
+  //  getLocalePath(locale, '/series/'),
+  //  getLocalePath(locale, '/archives/'),
     getLocalePath(locale, '/rss.xml')
   ]);
 
