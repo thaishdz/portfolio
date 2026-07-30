@@ -18,7 +18,7 @@ export const contentTypes = {
     icon: 'lucide:file-text',
     label: {
       en: 'Posts',
-      'zh-cn': '文章'
+      'es-es': 'Posts'
     },
     showMeta: true,
     cardStyle: 'article',
@@ -29,7 +29,7 @@ export const contentTypes = {
       limit: 5,
       title: {
         en: 'Recent Posts',
-        'zh-cn': '最近文章'
+        'es-es': 'Publicaciones recientes'
       }
     }
   },
@@ -39,7 +39,7 @@ export const contentTypes = {
     icon: 'lucide:layers',
     label: {
       en: 'Projects',
-      'zh-cn': '项目'
+      'es-es': 'Proyectos'
     },
     showMeta: true,
     cardStyle: 'showcase',
@@ -51,7 +51,7 @@ export const contentTypes = {
       featuredOnly: true,
       title: {
         en: 'Featured Projects',
-        'zh-cn': '精选项目'
+        'es-es': 'Proyectos destacados'
       }
     }
   }

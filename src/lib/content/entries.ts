@@ -36,14 +36,13 @@ export function localizedEntryPath(collection: ContentType, entry: CollectionEnt
 
 export function formatDate(date: Date | undefined, locale: Locale) {
   if (!date) return '';
-  return new Intl.DateTimeFormat(locale === 'zh-cn' ? 'zh-CN' : 'en', {
+  return new Intl.DateTimeFormat(locale === 'es-es' ? 'es-ES' : 'en', {
     year: 'numeric',
     month: 'long',
     day: 'numeric'
   }).format(date);
 }
 
-/** 生成指向当前语言 Archives 筛选状态的链接。 */
 export function archiveFilterPath(locale: Locale, filter: 'category' | 'tag', value: string) {
   const query = new URLSearchParams({ [filter]: value });
   return `${getLocalePath(locale, '/archives/')}?${query.toString()}`;
@@ -54,7 +53,6 @@ export type ArchiveTerm = {
   count: number;
 };
 
-/** 收集当前 locale 已发布 posts 的归档筛选词条。 */
 export function collectArchiveTerms(
   posts: Array<CollectionEntry<'posts'>>,
   field: 'tags' | 'categories',
@@ -67,7 +65,7 @@ export function collectArchiveTerms(
     for (const term of terms) counts.set(term, (counts.get(term) || 0) + 1);
   }
 
-  const collator = new Intl.Collator(locale === 'zh-cn' ? 'zh-CN' : locale);
+  const collator = new Intl.Collator(locale === 'es-es' ? 'es-ES' : locale);
   return [...counts.entries()]
     .map(([value, count]) => ({ value, count }))
     .sort((a, b) => field === 'tags'

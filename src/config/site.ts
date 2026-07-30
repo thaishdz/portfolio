@@ -1,23 +1,23 @@
 import type { Locale } from './i18n';
 
 export const siteConfig = {
-  name: 'Astro Narrow',
-  shortName: 'Astro Narrow',
-  description: 'A content-focused Astro theme inspired by Hugo Narrow.',
+  name: 'Thais Blog',
+  shortName: 'Thais',
+  description: 'My professional blog',
   author: {
-    name: 'Astro Narrow',
+    name: 'Thais Hernández',
     title: {
-      en: 'A clean and minimal Astro theme',
-      'zh-cn': '一个干净克制的 Astro 主题'
+      en: 'DevOps & Cloud Engineering',
+      'es-es': 'DevOps & Cloud Engineering'
     },
     description: {
-      en: 'Writing, projects, and notes — a compact space for ideas that keep their shape.',
-      'zh-cn': '写作、项目与笔记 —— 一个保持克制、注重结构感的内容空间。'
+      en: 'A record of side projects',
+      'es-es': 'Registro de side projects'
     },
     avatar: '/favicon.svg',
     social: [
-      { name: 'GitHub', url: 'https://github.com/', icon: 'simple-icons:github' },
-      { name: 'Email', url: 'mailto:hello@example.com', icon: 'lucide:mail' }
+      { name: 'GitHub', url: 'https://github.com/thaishdz', icon: 'simple-icons:github' },
+      { name: 'Email', url: 'mailto:thaishdzlpz@gmail.com', icon: 'lucide:mail' }
     ]
   },
   contentWidth: '56rem',
