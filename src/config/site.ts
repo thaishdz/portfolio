@@ -1,7 +1,7 @@
 import type { Locale } from './i18n';
 
 export const siteConfig = {
-  name: 'Thais Portfolio',
+  name: 'Thais H. Portfolio',
   shortName: 'Thais',
   description: 'My professional blog',
   author: {
@@ -11,8 +11,8 @@ export const siteConfig = {
       'es-es': 'DevOps & Cloud Engineering'
     },
     description: {
-      en: 'My side projects',
-      'es-es': 'Mis side projects'
+      en: 'Welcome to my side projects',
+      'es-es': 'Te doy la bienvenida a mis proyectos'
     },
     avatar: '/avatar.jpg',
     social: [
@@ -29,8 +29,8 @@ export const siteConfig = {
       enabled: true
     }
   },
-  nav: ['posts', 'series', 'projects', 'archives'],
-  footerNav: ['archives'],
+  nav: ['posts', 'series', 'projects', 'archives', 'about'],
+  footerNav: [],
   comments: {
     enabled: false,
     provider: 'giscus',
