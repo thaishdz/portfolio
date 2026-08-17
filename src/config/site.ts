@@ -3,7 +3,7 @@ import type { Locale } from './i18n';
 export const siteConfig = {
   name: 'Thais H. Portfolio',
   shortName: 'Thais',
-  description: 'My professional blog',
+  description: 'Professional Blogging',
   author: {
     name: 'Thais Hernández',
     title: {
