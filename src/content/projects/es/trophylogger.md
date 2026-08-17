@@ -23,15 +23,20 @@ TrophyLogger centraliza tus logros de Steam en un solo lugar.
 - API: Steam API
 - Arquitectura monorepo con `client/` y `server/` separados
 
-
-
-
 ## Roadmap
 
 | Area | Status |
 | --- | --- |
 | Dashboard Design | Done |
 | Steam API Integration | Done |
-| Auth (OpenID 2.0) | Pending |
-| Database | Pending |
+| Auth (OpenID 2.0) | Done |
+| Database | In Progress |
 | Deployment | Pending |
+
+## Decisiones arquitectónicas (ADRs)
+
+- [ADR-0001: Auth method separate collection](https://github.com/thaishdz/TrophyLogger/blob/main/docs/adr/0001-auth_method_separate_collection.md)
+- [ADR-0002: Steam achievement sync cache strategy](https://github.com/thaishdz/TrophyLogger/blob/main/docs/adr/0002-steam_achievement_sync_cache_strategy.md)
+
+## Flujos
+- [Steam Auth](https://github.com/thaishdz/TrophyLogger/blob/main/docs/flows/steam-auth-flow.md)
