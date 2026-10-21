@@ -7,8 +7,8 @@ export const siteConfig = {
   author: {
     name: 'Thais Hernández',
     title: {
-      en: 'DevOps & Cloud Engineering',
-      'es': 'DevOps & Cloud Engineering'
+      en: 'DevOps & Backend Developer',
+      'es': 'DevOps & Backend Developer'
     },
     description: {
       en: 'Welcome to my side projects',
