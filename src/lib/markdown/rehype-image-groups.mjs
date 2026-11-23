@@ -16,7 +16,7 @@ function figureForImage(img, index = 0) {
   img.properties ||= {};
   img.properties.loading ||= 'lazy';
   img.properties.decoding ||= 'async';
-  img.properties.className = ['mx-auto', 'block', 'max-h-[30rem]', 'w-auto', 'max-w-full', 'cursor-zoom-in', 'object-contain'];
+  img.properties.className = ['mx-auto', 'block', 'max-h-[44rem]', 'w-auto', 'max-w-full', 'cursor-zoom-in', 'object-contain'];
 
   const children = [
     {

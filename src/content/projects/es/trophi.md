@@ -17,7 +17,7 @@ Registra el seguimiento de tus logros de Steam y añade notas, guías y demás p
 
 ![Dashboard de Trophi](https://raw.githubusercontent.com/thaishdz/Trophi/main/docs/screenshots/2026-11-18.png)
 
-<div class="not-prose my-6 flex flex-wrap gap-1.5">
+<div class="not-prose my-6 flex flex-wrap gap-1">
   <img src="https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
   <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express" />
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
@@ -33,11 +33,6 @@ Registra el seguimiento de tus logros de Steam y añade notas, guías y demás p
   <img src="https://img.shields.io/badge/Supertest-444444?style=flat-square" alt="Supertest" />
   <img src="https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white" alt="Vitest" />
 </div>
-
-## Próximos pasos
-
-- **Desplegar una demo.** Antes hay que ajustar la cookie de sesión (`sameSite` y `secure`) y usar un `SESSION_SECRET` largo y aleatorio ([ADR-0012](https://github.com/thaishdz/Trophi/blob/main/docs/adr/0012-sesiones_en_mongodb.md)).
-- **Login con email y contraseña.** La colección `AuthMethod` ya está pensada para tener varios métodos de login por usuario ([ADR-0001](https://github.com/thaishdz/Trophi/blob/main/docs/adr/0001-auth_method_separate_collection.md)).
 
 ## Decisiones arquitectónicas (ADRs)
 
@@ -73,3 +68,8 @@ La [Web API de Steam](https://steamcommunity.com/dev) tiene un límite diario de
 ## Flujos
 
 - [Autenticación con Steam](https://github.com/thaishdz/Trophi/blob/main/docs/flows/steam-auth-flow.md)
+
+## Próximos pasos
+
+- **Desplegar una demo.** Antes hay que ajustar la cookie de sesión (`sameSite` y `secure`) y usar un `SESSION_SECRET` largo y aleatorio ([ADR-0012](https://github.com/thaishdz/Trophi/blob/main/docs/adr/0012-sesiones_en_mongodb.md)).
+- **Login con email y contraseña.** La colección `AuthMethod` ya está pensada para tener varios métodos de login por usuario ([ADR-0001](https://github.com/thaishdz/Trophi/blob/main/docs/adr/0001-auth_method_separate_collection.md)).

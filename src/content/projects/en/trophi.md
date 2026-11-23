@@ -17,7 +17,7 @@ Track your Steam achievements and add notes, guides and more to reach 100% in yo
 
 ![Trophi dashboard](https://raw.githubusercontent.com/thaishdz/Trophi/main/docs/screenshots/2026-11-18.png)
 
-<div class="not-prose my-6 flex flex-wrap gap-1.5">
+<div class="not-prose my-6 flex flex-wrap gap-1">
   <img src="https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
   <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express" />
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />

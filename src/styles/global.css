@@ -277,7 +277,7 @@ a {
   font-weight: 600;
 }
 
-.prose img {
+.prose img:not(.not-prose img) {
   max-width: 100%;
   height: auto;
   margin-inline: auto;
