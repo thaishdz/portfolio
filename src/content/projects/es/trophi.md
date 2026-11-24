@@ -71,5 +71,5 @@ La [Web API de Steam](https://steamcommunity.com/dev) tiene un límite diario de
 
 ## Próximos pasos
 
-- **Desplegar una demo.** Antes hay que ajustar la cookie de sesión (`sameSite` y `secure`) y usar un `SESSION_SECRET` largo y aleatorio ([ADR-0012](https://github.com/thaishdz/Trophi/blob/main/docs/adr/0012-sesiones_en_mongodb.md)).
+- **Desplegar una demo + onboarding.**
 - **Login con email y contraseña.** La colección `AuthMethod` ya está pensada para tener varios métodos de login por usuario ([ADR-0001](https://github.com/thaishdz/Trophi/blob/main/docs/adr/0001-auth_method_separate_collection.md)).
